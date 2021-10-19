@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <h2>Athlete Registration Form</h2>
+        </h1>
+        <br /><br />
+
+        <p>
+            Thank you for signing up at our club. Please fill in our information and we will contact you shortly to complete your membership
+        </p>
+
+        <br />
+
+
+        <form action="#" class="f-l-name" onsubmit="return validation()">
+            <label for="">Athlete's Name:</label>
+            <br />
+            <br />
+            <input class="first" type="text" placeholder="First" />
+            <input class="last" type="text" placeholder="Last" />
+            <br /><br />
+
+
+            <div class="date-of-birth">
+                <label for="">DOB:</label>
+                <br /><br />
+
+                <input class="dob" type="date" />
+            </div>
+
+            <br />
+            <div class="mail">
+                <label for="">Email:</label>
+                <br /><br />
+                <input placeholder="Email" id="email-a" class="email" type="email" />
+
+                <span id="email" class="text-danger"></span>
+
+            </div>
+            <br />
+
+            <div class="phone">
+                <label for="">Phone:</label>
+                <br /><br />
+                <input placeholder="Phone Number" id="phone-n" class="phone-number" type="tel" />
+
+                <span id="phonenumber" class="text-danger"></span>
+
+            </div>
+
+            <br />
+
+            <div class="mailing-address">
+                <label for="">Mailing-Address:</label>
+                <br /><br />
+                <input class="street-address" type="add" placeholder="Street Address" />
+                <br /><br />
+                <input type="city" class="city" placeholder="city" />
+                <input type="region" class="region" placeholder="region" />
+
+                <br /><br />
+
+                <input type="zip" class="zip" placeholder="Postal/Zip Code" />
+
+                <input type="country" class="country" placeholder="Country" />
+            </div>
+
+            <br />
+
+            <div class="gen">
+                <label for="">Gender:</label>
+                <br /><br />
+                <input type="radio" id="html" name="fav_language" value="Male" />
+                <label for="Male">Male</label>
+
+                <input type="radio" id="html" name="fav_language" value="Female" />   <label for="Female">Female</label>
+            </div>
+
+            <br /><br />
+
+            <div class="height-weight">
+                <label for="">Height</label>
+                <br /><br />
+
+                <input class="height" type="number" />
+                <br /><br />
+
+                <label for="">Weight</label>
+                <br /><br />
+
+                <input class="weight" type="number" />
+            </div>
+
+            <br /><br />
+
+            <div class="illness-history">
+                <label for="">Does athlete have a history of chronic illness?</label
+            ><br /><br />
+
+            <input type="radio" id="html" name="fav_language" value="Yes" />
+              <label for="Yes">Yes</label>
+
+                <input type="radio" id="html" name="fav_language" value="No" />   <label for="No">No</label>
+            </div>
+
+            <br /><br />
+
+            <div class="any-allergies">
+                <label for="">Does athlete have any allergies?</label><br /><br />
+
+                <input type="radio" id="html" name="fav_language" value="Yes" />   <label for="Yes">Yes</label>
+
+                <input type="radio" id="html" name="fav_language" value="No" />   <label for="No">No</label> <br /><br /><br />
+
+
+            </div>
+            <input type="submit" value="submit" name="submit" class="btn" />
+        </form>
+    </div>
+
+
+    <script>
+        function validation() {
+
+            var email = document.getElementById("email-a").value;
+
+            var ph = document.getElementById("phone-h").value;
+
+
+
+
+
+
+
+            if (email == "") {
+
+                document.getElementById("email").innerHTML = "Please fill email address";
+
+                return false;
+            }
+
+            if (ph == "") {
+
+                document.getElementById("phonenumber").innerHTML = "Please fill phone number";
+
+                return false;
+            }
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>
